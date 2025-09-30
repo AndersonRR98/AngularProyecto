@@ -6,9 +6,9 @@ import { Contact } from './pages/contact/contact';
 
 export const routes: Routes = [
     {path:'',component:Home},
-    {path:'nosotros',component:About},
-    {path:'productos',component:Products},
-    {path:'contacto',component:Contact},
+    {path:'about',component:About},
+    {path:'products',component:Products},
+    {path:'contact',component:Contact},
     {path:'**',redirectTo:''}
 
 ];

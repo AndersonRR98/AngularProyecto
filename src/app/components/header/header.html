@@ -1,9 +1,21 @@
-<header>
-    <nav>
-        <a routerLink="/">Inicio</a>               
-        <a routerLink="/nosotros">Nosotros</a>
-        <a routerLink="/productos">Productos</a>
-        <a routerLink="/contacto">Contacto</a>
-
-    </nav>
+<header class="main-header">
+  <nav class="navbar">
+    <div class="nav-brand">
+      <h2>MotoCenter</h2>
+    </div>
+    <div class="nav-links">
+      <a (click)="navigateToSection('home')" 
+         class="nav-link" 
+         [class.active]="activeSection === 'home'">Inicio</a>
+      <a (click)="navigateToSection('about')" 
+         class="nav-link" 
+         [class.active]="activeSection === 'about'">Nosotros</a>
+      <a (click)="navigateToSection('products')" 
+         class="nav-link" 
+         [class.active]="activeSection === 'products'">Productos</a>
+      <a (click)="navigateToSection('contact')" 
+         class="nav-link" 
+         [class.active]="activeSection === 'contact'">Contacto</a>
+    </div>
+  </nav>
 </header>

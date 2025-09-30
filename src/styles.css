@@ -1,11 +1,20 @@
-*{
-    box-sizing:border-box;
-    margin: 0;
-    padding: 0;
+/* styles.css */
+.section {
+  min-height: 100vh;
+  padding: 80px 2rem 2rem; /* 80px para compensar el header fixed */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-img{
-    width: 100%;
+
+.section-content {
+  max-width: 1200px;
+  width: 100%;
+  text-align: center;
 }
-body{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
+
+/* Colores diferentes para cada sección para testing */
+#home { background: #f8f9fa; }
+#about { background: #e9ecef; }
+#products { background: #dee2e6; }
+#contact { background: #ced4da; }
