@@ -1,8 +1,7 @@
 /* estilos generales */
-
 .home-container {
   min-height: 100vh;
-  background-color: #040404;
+  background-color: #0D1B2A; /* Fondo principal */
 }
 
 .container {
@@ -12,32 +11,33 @@
 }
 
 .main-header {
-  background: linear-gradient(135deg, #d7d9ce, #119da4);
-  color: #040404;
+  background: linear-gradient(135deg, #415A77, #778DA9); 
+  color: #E0E1DD;
   padding: 40px 0;
   text-align: center;
   margin-bottom: 40px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.3);
 }
 
 .main-header h1 {
   font-size: 2.5rem;
   font-weight: 700;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
 }
 
 .content-section {
-  background: white;
+  background: #1B263B; /* Fondo intermedio */
   padding: 40px;
   border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.25);
   margin-bottom: 40px;
+  color: #E0E1DD;
 }
 
 .content-section p {
   font-size: 1.1rem;
   line-height: 1.8;
-  color: #444;
+  color: #E0E1DD;
   margin-bottom: 30px;
   text-align: justify;
 }
@@ -50,7 +50,7 @@
   border-radius: 8px;
   display: block;
   margin: 0 auto;
-  box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+  box-shadow: 0 5px 20px rgba(0,0,0,0.25);
   transition: transform 0.3s ease;
 }
 
