@@ -8,7 +8,7 @@ import { filter } from 'rxjs/operators';
   styleUrls: ['./header.css']
 })
 export class Header implements OnInit {
-  activeSection: string = 'home'; // Cambiado de activeRoute a activeSection
+  activeSection: string = 'home'; 
   private router = inject(Router);
 
   ngOnInit() {

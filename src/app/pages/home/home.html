@@ -7,20 +7,14 @@
   </div>
 
   <div class="container">
-    <div class="content-section">
+    <div *ngFor="let moto of motos" class="content-section">
       <div class="text-content">
-        <p>
-          En este sitio encontrarás la mejor información sobre las motos deportivas. 
-          Las motos más rápidas del mundo suelen incluir modelos como la Dodge Tomahawk, 
-          la MTT Turbine Superbike Y2K y la Kawasaki Ninja H2R, con velocidades máximas 
-          que superan los 350 km/h, aunque las velocidades varían según la lista y la fuente. 
-          La Dodge Tomahawk se cita frecuentemente como la más veloz, con velocidades teóricas 
-          superiores a los 500 km/h, mientras que la Kawasaki Ninja H2R es a menudo considerada 
-          la moto de producción más rápida disponible comercialmente.
-        </p>
+        <h2>{{ moto.nombre }}</h2>
+        <p>{{ moto.descripcion }}</p>
+        <p><strong>Velocidad máxima:</strong> {{ moto.velocidadMax }}</p>
       </div>
       <div class="image-content">
-        <img src="public/img/inicio.jpg" alt="Moto deportiva" class="moto-image">
+        <img [src]="moto.imagen" [alt]="moto.nombre" class="moto-image">
       </div>
     </div>
   </div>
